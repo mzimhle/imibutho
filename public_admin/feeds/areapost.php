@@ -1,0 +1,45 @@
+<?php
+/* Add this on all pages on top. */
+set_include_path(realpath($_SERVER['DOCUMENT_ROOT']).PATH_SEPARATOR.realpath($_SERVER['DOCUMENT_ROOT']).'/library/classes/');
+
+/**
+ * Standard includes
+ */
+require_once 'config/database.php';
+require_once 'config/smarty.php';
+
+require_once 'class/areapost.php';
+
+$areapostObject	= new class_areapost();
+
+$results 				= array();
+$list						= array();	
+
+if(isset($_REQUEST['term'])) {
+
+	$q			= trim($_REQUEST['term']); 
+	
+	$areaData	= $areapostObject->search($q);	
+	
+	if($areaData) {
+		for($i = 0; $i < count($areaData); $i++) {
+			$list[] = array(
+				"id" 		=> $areaData[$i]["areapost_code"],
+				"label" 	=> $areaData[$i]['areapost_name'],
+				"value" 		=> $areaData[$i]['areapost_name'],
+				"suburb"	=> $areaData[$i]['areapost_name']
+			);			
+		}	
+	}
+}
+
+if(count($list) > 0) {
+	echo json_encode($list); 
+	exit;
+} else {
+	echo json_encode(array('id' => '', 'label' => 'no results')); 
+	exit;
+}
+exit;
+
+?>

@@ -1,0 +1,25 @@
+[20-Nov-2013 11:58:33 Africa/Johannesburg] PHP Fatal error:  Call to undefined function where() in /home/bizloung/public_html/library/classes/class/participant.php on line 139
+[20-Jul-2015 23:59:06 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Table 'imibutho_db.participantlogin' doesn't exist' in /home/imibuthoco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `partici...')
+#1 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `partici...')
+#2 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `partici...')
+#3 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/imibuthoco/public_html/library/classes/class/participantlogin.php(368): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#5 /home/imibuthoco/public_html/registration/complete/default.php in /home/imibuthoco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[21-Jul-2015 00:14:44 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Table 'imibutho_db.participantlogin' doesn't exist' in /home/imibuthoco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `partici...')
+#1 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `partici...')
+#2 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `partici...')
+#3 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/imibuthoco/public_html/library/classes/class/participantlogin.php(368): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#5 /home/imibuthoco/public_html/registration/complete/default.php in /home/imibuthoco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[21-Jul-2015 00:18:54 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Table 'imibutho_db.participantlogin' doesn't exist' in /home/imibuthoco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `partici...')
+#1 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `partici...')
+#2 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `partici...')
+#3 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/imibuthoco/public_html/library/classes/class/participantlogin.php(368): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#5 /home/imibuthoco/public_html/registration/complete/default.php in /home/imibuthoco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77

@@ -1,0 +1,49 @@
+[18-Jul-2015 23:33:23 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected ',' in /home/imibuthoco/public_admin/article/default.php on line 62
+[18-Jul-2015 23:35:14 Africa/Johannesburg] PHP Fatal error:  Class 'class_article' not found in /home/imibuthoco/public_admin/article/default.php on line 16
+[18-Jul-2015 23:35:38 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "article/view/default.tpl" in /home/imibuthoco/public_admin/library/classes/smarty/Smarty.class.php on line 1095
+[19-Jul-2015 00:01:12 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'article_name' in 'field list'' in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('INSERT INTO `ac...')
+#1 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'INSERT INTO `ac...')
+#2 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('INSERT INTO `ac...')
+#3 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `ac...', Array)
+#4 /home/imibuthoco/public_admin/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('account', Array)
+#5 /home/imibuthoco/public_admin/library/classes/class/article.php(23): Z in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[19-Jul-2015 00:06:14 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'article_url' in 'field list'' in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('INSERT INTO `ar...')
+#1 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'INSERT INTO `ar...')
+#2 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('INSERT INTO `ar...')
+#3 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `ar...', Array)
+#4 /home/imibuthoco/public_admin/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('article', Array)
+#5 /home/imibuthoco/public_admin/library/classes/class/article.php(23): Ze in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[19-Jul-2015 00:07:41 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Duplicate column name 'article_name'' in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('select count(*)...')
+#1 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'select count(*)...')
+#2 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('select count(*)...')
+#3 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query('select count(*)...', Array)
+#4 /home/imibuthoco/public_admin/library/classes/class/article.php(60): Zend_Db_Adapter_Abstract->fetchRow('select count(*)...')
+#5 /home/imibuthoco/public_admin/article/default.php(55): class_article->getSearch(NULL in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[19-Jul-2015 00:19:50 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'account_deleted = 0) ORDER BY `article`.`article_name` desc) as query' at line 3' in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('select count(*)...')
+#1 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'select count(*)...')
+#2 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('select count(*)...')
+#3 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query('select count(*)...', Array)
+#4 /home/imibuthoco/public_admin/libr in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[19-Jul-2015 00:29:45 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'account_deleted = 0) ORDER BY `article`.`article_name` desc) as query' at line 3' in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('select count(*)...')
+#1 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'select count(*)...')
+#2 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('select count(*)...')
+#3 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query('select count(*)...', Array)
+#4 /home/imibuthoco/public_admin/libr in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[19-Jul-2015 00:30:05 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'account_deleted = 0) ORDER BY `article`.`article_name` desc) as query' at line 3' in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('select count(*)...')
+#1 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'select count(*)...')
+#2 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('select count(*)...')
+#3 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query('select count(*)...', Array)
+#4 /home/imibuthoco/public_admin/libr in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[19-Jul-2015 13:08:02 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "article/comment.tpl" in /home/imibuthoco/public_admin/library/classes/smarty/Smarty.class.php on line 1095

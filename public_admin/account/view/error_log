@@ -1,0 +1,8 @@
+[18-Jul-2015 13:36:00 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'account_surname' in 'field list'' in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('UPDATE `account...')
+#1 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'UPDATE `account...')
+#2 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('UPDATE `account...')
+#3 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(604): Zend_Db_Adapter_Abstract->query('UPDATE `account...', Array)
+#4 /home/imibuthoco/public_admin/library/classes/Zend/Db/Table/Abstract.php(1110): Zend_Db_Adapter_Abstract->update('account', Array, 'account_code = ...')
+#5 /home/imibuthoco/public_admin/library/classes in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php on line 77

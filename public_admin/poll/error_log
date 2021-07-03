@@ -1,0 +1,9 @@
+[20-Jul-2015 18:40:44 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'Session must be started before any output has been sent to the browser; output started in /home/imibuthoco/public_admin/poll/details.php/2' in /home/imibuthoco/public_admin/library/classes/Zend/Session.php:454
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Session/Namespace.php(143): Zend_Session::start(true)
+#1 /home/imibuthoco/public_admin/includes/auth.php(13): Zend_Session_Namespace->__construct('BackendLogin')
+#2 /home/imibuthoco/public_admin/poll/details.php(11): require_once('/home/imibuthoc...')
+#3 {main}
+  thrown in /home/imibuthoco/public_admin/library/classes/Zend/Session.php on line 454
+[20-Jul-2015 18:59:17 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/imibuthoco/public_admin/library/classes/class/pollquestion.php on line 63
+[20-Jul-2015 18:59:29 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "poll/contact.tpl" in /home/imibuthoco/public_admin/library/classes/smarty/Smarty.class.php on line 1095

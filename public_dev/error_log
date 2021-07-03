@@ -1,0 +1,23 @@
+[18-Dec-2014 21:40:47 Africa/Johannesburg] PHP Warning:  require_once(Zend/Db.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/imibuthoco/public_html/config/database.php on line 7
+[18-Dec-2014 21:40:47 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'Zend/Db.php' (include_path='/home/imibuthoco/public_html/:/home/imibuthoco/public_html/library/classes/') in /home/imibuthoco/public_html/config/database.php on line 7
+[19-Mar-2015 20:50:11 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in default.tpl line 77]: syntax error: unrecognized tag: $('#edate').countdown('2015/03/20', function(event) {
+	       $(this).html(event.strftime(''
+            + '<div>%w<span>week(s)</span></div>'
+            + '<div>%d<span>day(s)</span></div>'
+            + '<div>%H<span>hour(s)</span></div> '
+            + '<div>%M<span>minute(s)</span></div> '
+            /*+ '<div>%S<span>seconds</span></div>'*/)); (Smarty_Compiler.class.php, line 446) in /home/imibuthoco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[20-Mar-2015 20:23:51 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Column 'participant_surname' cannot be null' in /home/imibuthoco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/imibuthoco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/imibuthoco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `pa...', Array)
+#3 /home/imibuthoco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('participant', Array)
+#4 /home/imibuthoco/public_html/library/classes/class/participant.php(38): Zend_Db_Table_Abstract->insert(Array)
+#5 /home/imibuthoco/public_html/library/classes/class/participant.php(119): class_participant->insert(Array)
+#6 /home/imibuthoco/public_html/default.php( in /home/imibuthoco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[20-Mar-2015 20:25:01 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_comm::sendMail() in /home/imibuthoco/public_html/library/classes/class/participant.php on line 133
+[20-Mar-2015 20:33:51 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected ',' in /home/imibuthoco/public_html/library/classes/class/participant.php on line 133
+[20-Mar-2015 20:34:05 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "/home/imibuthoco/public_html/templates/registration_email_verify.html" in /home/imibuthoco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[14-Apr-2015 22:11:34 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in default.tpl line 62]: syntax error: unbalanced parenthesis in if statement (Smarty_Compiler.class.php, line 1277) in /home/imibuthoco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[14-Apr-2015 22:11:35 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in default.tpl line 62]: syntax error: unbalanced parenthesis in if statement (Smarty_Compiler.class.php, line 1277) in /home/imibuthoco/public_html/library/classes/smarty/Smarty.class.php on line 1095

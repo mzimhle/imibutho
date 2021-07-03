@@ -1,0 +1,249 @@
+html, body{
+    height: 100%;
+}
+body{
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    color: #FFF;
+    background: #242424 url(../images/back.jpg);
+    padding: 0; margin: 0;
+}
+h1, h2, h3{
+    font-family: 'Century Gothic', 'Questrial', Helvetica, Verdana, Arial, sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #cd682b;
+    line-height: 26px;
+}
+.blue-txt{
+    color: #2a398e !important;
+}
+.ora-txt{
+    color: #cd682b !important;
+}
+.container{
+    width: 828px;
+    margin: auto;
+}
+.head-box{
+    margin: 20px 0 0 0;
+}
+.logobox{
+    width: 180px;
+    padding: 0 20px 0 10px;
+    text-align: left;
+    float: left;
+}
+.intro-box{
+    width: 590px;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    color: #FFF;
+    font-size: 12px;
+    float: left;
+    line-height: 16px;
+    padding: 0 10px 0 0;
+    margin-top: -8px;
+}
+.shieldbox{
+    background: url(../images/body_bck.png) no-repeat center top;
+}
+.leftbox{
+    text-align: left;
+    float: left;
+    width: 300px;
+    margin: 40px 0 0 70px;
+}
+.leftwrap{
+    color: #FFF;
+}
+.leftbox p, .rightbox p{
+    text-align: left;
+    font-size: 12px;
+    color:  #FFF;
+}
+.rightbox{
+    text-align: left;
+    float: left;
+    width: 300px;
+    margin: 40px 0 0 70px;
+}
+.regform{
+    padding: 7px 0 0 0;
+}
+input[type=text], input[type=email]{
+    color: #333;
+    padding: 5px 5px;
+    border: 0;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+textarea{
+    color: #333;
+    padding: 7px 5px;
+    border: 0;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+input[type=submit]{
+    font-family: 'Century Gothic', 'Questrial', Helvetica, Verdana, Arial, sans-serif;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    background: #cd692b;
+    border: 0;
+    margin: 8px 0 8px 0;
+    padding: 6px 16px 5px 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: left;
+}
+.sub-btn{
+    background: #2a398e !important;
+}
+label, .leftlabel{
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #cd682b;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+.leftlabel{
+    color: #FFF;
+}
+:focus{
+    outline: none;
+    border: 0;
+}
+.shadow{
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.floattxt{
+    float: left;
+    margin: 14px 0 0 27px;
+}
+.soclog{
+    float: left;
+    margin: 8px 0 0 19px;
+}
+.soclog images{
+    cursor: pointer;
+}
+.cf:after{
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    max-height: 0;
+}
+*:first-child+html .cf{ /* IE7 */
+    zoom: 1;
+}
+.space{
+    margin-bottom: 50px;
+}
+.counttxt{
+    font-family: 'Century Gothic', 'Questrial', Helvetica, Verdana, Arial, sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 500px;
+    margin: auto;
+    padding-left: 266px;
+    padding-top: 15px;
+}
+.countbox{
+    width: 600px;
+    margin: 5px 0 0 340px;
+}
+.countbox div{
+    font-family: 'Century Gothic', 'Questrial', Helvetica, Verdana, Arial, sans-serif;
+    font-size: 44px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    padding: 0 7px;
+    width: 80px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+.countbox span{
+    font-family: 'Century Gothic', 'Questrial', Helvetica, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #cd692b;
+    padding: 0 10px 0 10px;
+    display: block;
+    margin: -7px 0 15px 0;
+}
+.membox{
+    width: 596px;
+    margin: auto;
+}
+.lmem, .rmem{
+    float: left;
+    width: 50%;
+}
+.membox images{
+    float: left;
+    margin-right: 6px;
+}
+.meminfo{
+    float: left;
+    background: url(/images/mem_bck.png);
+    padding: 7px 10px;
+    width: 180px;
+    margin: 0 0 30px 0;
+}
+.mname{
+    font-family: 'Century Gothic', 'Questrial', Helvetica, Verdana, Arial, sans-serif;
+    font-size: 12px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0px;
+    color: #a94e1e;
+}
+.meminfo p{
+    font-size: 10px;
+    line-height: 11px;
+    margin: 5px 0 0 0;
+}
+.meminfo span{
+    color: #a94e1e;
+}
+footer{
+    font-size: 11px;
+    border-top: 2px solid #cd682b;
+    padding: 25px 0 60px 0;
+    margin: 25px 0 0 0;
+    background: url(../images/mem_bck.png);
+    width: 800px;
+    margin: auto;
+}
+.footbox{
+    width: 596px;
+    margin: auto;
+}
+.copytxt{
+    float: left;
+    width: 396px;
+}
+.soclinks{
+    text-align: right;
+    float: right;
+    width: 200px;
+}
+.soclinks images{
+    margin-left: 8px;
+}
+.error{
+	color: red;
+	font-weight: bold;
+}

@@ -1,0 +1,20 @@
+[18-Jul-2015 13:38:28 Africa/Johannesburg] PHP Warning:  require_once(class/project.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/imibuthoco/public_admin/project/view/default.php on line 14
+[18-Jul-2015 13:38:28 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'class/project.php' (include_path='/home/imibuthoco/public_admin/:/home/imibuthoco/public_admin/library/classes/') in /home/imibuthoco/public_admin/project/view/default.php on line 14
+[18-Jul-2015 15:45:16 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'project_surname' in 'field list'' in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('INSERT INTO `pr...')
+#1 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'INSERT INTO `pr...')
+#2 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('INSERT INTO `pr...')
+#3 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `pr...', Array)
+#4 /home/imibuthoco/public_admin/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('project', Array)
+#5 /home/imibuthoco/public_admin/library/classes/class/project.php(23) in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[18-Jul-2015 18:29:27 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "project/view/image.tpl" in /home/imibuthoco/public_admin/library/classes/smarty/Smarty.class.php on line 1095
+[18-Jul-2015 19:13:12 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected ';' in /home/imibuthoco/public_admin/project/view/contact.php on line 136
+[18-Jul-2015 20:18:50 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Table 'imibutho_db.volunteer' doesn't exist' in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `volunte...')
+#1 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `volunte...')
+#2 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `volunte...')
+#3 /home/imibuthoco/public_admin/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/imibuthoco/public_admin/library/classes/class/volunteer.php(65): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/imibuthoco/public_admin/project/view/volunteer.php(30): class_vol in /home/imibuthoco/public_admin/library/classes/Zend/Db/Statement/Mysqli.php on line 77
